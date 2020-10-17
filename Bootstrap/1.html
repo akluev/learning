@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:green">
+
+<div class="container" style="background-color:red">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p>
+</div>
+
+	<div class="container p-3 my-3 border">
+	<input type=search name=s />
+	<input type=date name=d />
+	<label for="bdaymonth">Birthday (month and year):</label>
+    <input type="month" id="bdaymonth" name="bdaymonth">
+
+	</div>
+	<div class="container p-3 my-3 bg-dark text-white"></div>
+	<div class="container p-3 my-3 bg-primary text-white"></div>
+
+<canvas id="c" width="300" height="300" style="background-color:yellow" ></canvas>
+
+<script>
+  var canvas = document.getElementById( "c" );
+  var drawing_context = canvas.getContext( "2d" );
+  drawing_context.fillStyle = "blue";
+  drawing_context.fillRect( 50, 50, 100, 100 );
+</script>
+
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+
+</body>
+</html>
